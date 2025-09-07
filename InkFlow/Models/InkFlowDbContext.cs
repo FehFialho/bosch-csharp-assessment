@@ -10,7 +10,7 @@ public class InkFlowDbContext(DbContextOptions options) : DbContext(options)
 
     protected override void OnModelCreating(ModelBuilder model)
     {
-        base.OnModelCreating(model);
+
     }
 
 }
