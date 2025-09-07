@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ThePixeler.Models;
+using InkFlow.Entities;
 
 public class InkFlowDbContext(DbContextOptions options) : DbContext(options)
 {

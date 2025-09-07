@@ -1,5 +1,4 @@
-namespace ThePixeler.Models;
-
+namespace InkFlow.Entities;
 public class User
 {
     public Guid UserID { get; set; }

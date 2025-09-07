@@ -1,4 +1,4 @@
-namespace ThePixeler.Models;
+namespace InkFlow.Entities;
 
 public class HistoryList
 {
