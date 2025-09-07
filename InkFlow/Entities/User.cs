@@ -1,4 +1,5 @@
 namespace InkFlow.Entities;
+
 public class User
 {
     public Guid UserID { get; set; }
@@ -7,6 +8,6 @@ public class User
     public string? WriteDescription { get; set; }
     public DateTime AccountCreation { get; set; }
 
-    public ICollection<History>? Histories { get; set; }
+    public ICollection<Story>? Stories { get; set; }  // Antes: Histories
     public ICollection<ReadList>? ReadLists { get; set; }
 }

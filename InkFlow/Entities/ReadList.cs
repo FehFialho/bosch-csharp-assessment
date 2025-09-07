@@ -7,6 +7,5 @@ public class ReadList
     public DateTime LastModification { get; set; }
 
     public required User Author { get; set; }
-    public ICollection<HistoryList>? HistoryLists { get; set; }
-
+    public ICollection<StoryList>? StoryLists { get; set; } // Antes: HistoryLists
 }
