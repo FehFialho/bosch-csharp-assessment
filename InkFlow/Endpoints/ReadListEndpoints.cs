@@ -1,4 +1,5 @@
 using InkFlow.UseCases.Login;
+using InkFlow.UseCases.SearchReadList;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InkFlow.Endpoint;
@@ -7,25 +8,27 @@ public static class ReadListEndpoints
 {
     public static void ConfigureReadListEndpoints(this WebApplication app)
     {
-        app.MapPost("auth", async (
-            [FromBody] LoginPayload payload,
-            [FromServices] LoginUseCase useCase) =>
+
+        app.MapPost("search-readlist", async (
+            [FromServices] SearchReadListUseCase useCase,
+            [FromBody] SearchReadListPayload payload) =>
         {
             var result = await useCase.Do(payload);
+
             if (!result.IsSuccess)
                 return Results.BadRequest();
             return Results.Ok(result.Data);
         });
-        
-        // app.MapPost("createUser", async (
-        //     [FromServices] CreateProfileUseCase useCase,
-        //     [FromBody] CreateProfilePayload payload) =>
+
+        // app.MapPost("add-to-readlist", async (
+        //     [FromServices] AddToReadListUseCase useCase,
+        //     [FromBody] AddToReadListPayload payload) =>
         // {
         //     var result = await useCase.Do(payload);
 
         //     if (!result.IsSuccess)
         //         return Results.BadRequest();
         //     return Results.Ok(result.Data);
-        // }); 
+        // });
     }
 }

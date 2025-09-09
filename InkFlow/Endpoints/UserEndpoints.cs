@@ -1,3 +1,4 @@
+using InkFlow.UseCases.CreateProfile;
 using InkFlow.UseCases.Login;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,7 +7,7 @@ namespace InkFlow.Endpoint;
 public static class UserEndpoint
 {
     public static void ConfigureUserEndpoints(this WebApplication app)
-    { 
+    {
         app.MapPost("auth", async (
             [FromServices] LoginUseCase useCase,
             [FromBody] LoginPayload payload) =>
@@ -16,7 +17,18 @@ public static class UserEndpoint
             if (!result.IsSuccess)
                 return Results.BadRequest();
             return Results.Ok(result.Data);
-            
+
         }).RequireAuthorization();
+        
+        app.MapPost("createUser", async (
+            [FromServices] CreateProfileUseCase useCase,
+            [FromBody] CreateProfilePayload payload) =>
+        {
+            var result = await useCase.Do(payload);
+
+            if (!result.IsSuccess)
+                return Results.BadRequest();
+            return Results.Ok(result.Data);
+        }); 
     }
 }

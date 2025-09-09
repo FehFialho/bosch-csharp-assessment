@@ -11,7 +11,7 @@ public record CreateProfilePayload
 
     [Required]
     [MinLength(8)]
-    [MaxLength(8)]
+    [MaxLength(20)]
     public required string Password { get; set; }
 
     [Required]

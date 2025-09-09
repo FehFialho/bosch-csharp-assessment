@@ -162,3 +162,4 @@ C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\
 C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\obj\Debug\net8.0\InkFlow.pdb
 C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\obj\Debug\net8.0\InkFlow.genruntimeconfig.cache
 C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\obj\Debug\net8.0\ref\InkFlow.dll
+C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
