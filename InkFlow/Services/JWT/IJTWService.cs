@@ -1,5 +1,4 @@
-using InkFlow.Services.JWT;
-namespace Inkflow.Services.JWT;
+namespace InkFlow.Services.JWT;
 
 public interface IJWTService
 {
