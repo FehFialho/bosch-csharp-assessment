@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InkFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cb3bbf65adf10f6601fedd9798b1bcff0acf622")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c2cc145b5afb92721958aaf00cf95447ead57bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("InkFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InkFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

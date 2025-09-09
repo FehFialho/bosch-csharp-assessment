@@ -1,9 +1,12 @@
 using InkFlow;
 using InkFlow.Entities;
+using InkFlow.Services.TextValidation;
 using InkFlow.UseCases.CreateStory;
+using Microsoft.IdentityModel.Tokens;
 
 public class CreateStoryUseCase(
-        InkFlowDbContext ctx
+        InkFlowDbContext ctx,
+        TextValidationService validationService
     )
 {
     public async Task<Result<CreateStoryResponse>> Do(CreateStoryPayload payload)
@@ -12,6 +15,11 @@ public class CreateStoryUseCase(
 
         if (writer is null)
             return Result<CreateStoryResponse>.Fail("Usuário não encontrado");
+
+        var isValid = await validationService.Validate(payload.Text);
+
+        if (!isValid)
+            return Result<CreateStoryResponse>.Fail("O texto não atende os critérios!");
 
         var story = new Story
         {
