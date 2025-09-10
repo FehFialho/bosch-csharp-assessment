@@ -1,3 +1,4 @@
+using InkFlow.UseCases.AddToReadList;
 using InkFlow.UseCases.Login;
 using InkFlow.UseCases.SearchReadList;
 using Microsoft.AspNetCore.Mvc;
@@ -20,15 +21,15 @@ public static class ReadListEndpoints
             return Results.Ok(result.Data);
         });
 
-        // app.MapPost("add-to-readlist", async (
-        //     [FromServices] AddToReadListUseCase useCase,
-        //     [FromBody] AddToReadListPayload payload) =>
-        // {
-        //     var result = await useCase.Do(payload);
+        app.MapPost("add-to-readlist", async (
+            [FromServices] AddToReadUseCase useCase,
+            [FromBody] AddToReadPayload payload) =>
+        {
+            var result = await useCase.Do(payload);
 
-        //     if (!result.IsSuccess)
-        //         return Results.BadRequest();
-        //     return Results.Ok(result.Data);
-        // });
+            if (!result.IsSuccess)
+                return Results.BadRequest();
+            return Results.Ok(result.Data);
+        });
     }
 }
