@@ -17,6 +17,8 @@ public class EditStoryUseCase(
         if (payload.Title is not null)
             story.Title = payload.Title; // Apply Service Later
 
+        await ctx.SaveChangesAsync();
+
         return Result<EditStoryResponse>.Success(new());
     }
 }

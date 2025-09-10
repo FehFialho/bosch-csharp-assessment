@@ -31,7 +31,7 @@ public static class StoryEndpoints
             return Results.Ok(result.Data);
         }); 
 
-        app.MapDelete("edit-story", async (
+        app.MapPut("edit-story", async (
             [FromServices] EditStoryUseCase useCase,
             [FromBody] EditStoryPayload payload) =>
         {

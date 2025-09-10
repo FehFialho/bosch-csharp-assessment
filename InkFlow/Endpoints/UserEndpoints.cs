@@ -18,7 +18,7 @@ public static class UserEndpoint
                 return Results.BadRequest();
             return Results.Ok(result.Data);
 
-        }).RequireAuthorization();
+        });
         
         app.MapPost("createUser", async (
             [FromServices] CreateProfileUseCase useCase,

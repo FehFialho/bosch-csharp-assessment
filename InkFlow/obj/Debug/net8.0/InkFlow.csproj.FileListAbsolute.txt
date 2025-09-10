@@ -163,3 +163,8 @@ C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\
 C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\obj\Debug\net8.0\InkFlow.genruntimeconfig.cache
 C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\obj\Debug\net8.0\ref\InkFlow.dll
 C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ferna\OneDrive\Área de Trabalho\Bosch\bosch-csharp-assessment\InkFlow\obj\Debug\net8.0\InkFlow.MvcApplicationPartsAssemblyInfo.cs
